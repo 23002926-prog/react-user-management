@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "João Da Silva ",
+      "email": "",
+      "id": 1
+    },
+    {
+      "name": "Claudia da Cruz ",
+      "email": "claudiacr@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Pedro Ramirez ",
+      "email": "pedro@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "popó",
+      "email": "gmail@com",
+      "id": 4
+    }
+  ]
+}
