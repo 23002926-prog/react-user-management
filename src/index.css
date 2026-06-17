@@ -1,0 +1,276 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f3f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 28%),
+    linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app-shell {
+  padding: 32px 16px 48px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.topbar,
+.panel {
+  background: #fff;
+  border: 1px solid #dde6f1;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px;
+  color: #1f2937;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.topbar h1,
+.panel h2 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+.topbar h1 {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  max-width: 14ch;
+}
+
+.topbar p,
+.panel-text {
+  margin: 14px 0 0;
+  color: #526074;
+  line-height: 1.6;
+  max-width: 56ch;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.summary-card {
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid #dde6f1;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+}
+
+.summary-card span,
+.panel-header span {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.summary-card strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 1.45rem;
+  color: #0f172a;
+}
+
+.ghost-button {
+  border: 1px solid #cfd9e7;
+  color: #1f2937;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.panel {
+  padding: 22px;
+  color: #1f2937;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.panel-highlight {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+}
+
+.form {
+  display: grid;
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  color: #333;
+  font-size: 0.92rem;
+}
+
+.form input {
+  width: 100%;
+  border: 1px solid #c7d2e3;
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: #222;
+  background: #fff;
+  outline: none;
+}
+
+.form input::placeholder {
+  color: #999;
+}
+
+.form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+.form button {
+  margin-top: 6px;
+  border: 1px solid #1d4ed8;
+  border-radius: 12px;
+  padding: 11px 12px;
+  background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  font-weight: 700;
+}
+
+.form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #dde6f1;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+}
+
+.list-item strong {
+  display: block;
+  color: #0f172a;
+  font-size: 0.98rem;
+}
+
+.list-item p {
+  margin: 4px 0 0;
+  color: #6b7280;
+  word-break: break-word;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.status {
+  margin: 0 0 16px;
+  color: #526074;
+}
+
+.status.error {
+  color: #b00020;
+}
+
+.empty-state {
+  margin: 0;
+  color: #6b7280;
+}
+
+@media (max-width: 860px) {
+  .topbar,
+  .summary-grid,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .app-shell {
+    padding: 20px 14px 32px;
+  }
+
+  .topbar,
+  .summary-card,
+  .panel {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .list-item {
+    grid-template-columns: 1fr;
+  }
+}
